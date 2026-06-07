@@ -99,11 +99,11 @@ export const programs = [
 export const partnerSchools = [
   { id: 1, name: "Grace Schools", type: "Primary and Secondary", location: "Gbagada, Lagos", logo: graceLogo, },
   { id: 2,  name: "Cedars World Nursery and Primary school", type: "Primary School", location: "Surulere, Lagos", logo: cedarsLogo, },
-  { id: 3, name: "Command Day School Bonny Camp", type: "Secondary School", location: "Victoria Island, Lagos", logo: commandLogo, },
+  { id: 3, name: "Command Day School, Bonny Camp", type: "Secondary School", location: "Victoria Island, Lagos", logo: commandLogo, },
   { id: 4, name: "Faith Academy Gowon", type: "Secondary School", location: "Egbeda, Lagos", logo: faithLogo, },
   { id: 5, name: "Nigeria Military School", type: "Secondary", location: "Zaria, Kaduna", logo: zariaLogo, },
   { id: 6, name: "Command Day Secondary School", type: "Secondary School", location: "Lungi Barracks, Abuja", logo: commandLogo,  },
-  { id: 7, name: "Command Day Secondary School Orlu", type: "Secondary School", location: "Orlu, Imo State", logo: commandLogo,  },
+  { id: 7, name: "Command Day Secondary School, Orlu", type: "Secondary School", location: "Orlu, Imo State", logo: commandLogo,  },
   { id: 8, name: "Convenant University Secondary School", type: "Secondary School", location: "Ota, Ogun State", logo: convenantLogo, },
   { id: 9, name: "Faith Academy Canaanland", type: "Secondary School", location: "Ota, Ogun State", logo: faithLogo, },
 ];
