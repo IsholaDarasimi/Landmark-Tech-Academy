@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import SectionHeader from "../components/SectionHeader";
+import { managementTeam } from "../data/managementteam";
 
 export default function About() {
   return (
@@ -103,6 +104,61 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Management team */}
+      <section className="py-20 bg-gray-50">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <SectionHeader
+                  eyebrow="Management Team"
+                  title="Leadership And Operation"
+                  subtitle="The core team responsible for strategic direction, operations, and institutional growth."
+                />
+
+    {/* GRID */}
+    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+      {managementTeam.map((member, index) => (
+        <div
+          key={index}
+          className="card-hover bg-white border border-gray-100 hover:border-cisco-blue/20 rounded-xl overflow-hidden group"
+        >
+
+          <div className="w-full h-40 bg-gray-100 overflow-hidden">
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+
+          <div className="p-4">
+            <h3 className="font-display font-semibold text-cisco-navy text-base group-hover:text-cisco-blue transition-colors duration-200">
+              {member.name}
+            </h3>
+
+            <p className="text-xs text-gray-400 mt-1">
+              {member.role}
+            </p>
+
+            <div className="flex flex-wrap gap-2 mt-3">
+              {member.competencies.map((skill, i) => (
+                <span
+                  key={i}
+                  className="text-xs font-mono text-cisco-blue bg-cisco-blue/8 border border-cisco-blue/15 px-2 py-1 rounded-md"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>
 
       {/* School Partnership Model */}
       <section className="py-20 bg-white">
